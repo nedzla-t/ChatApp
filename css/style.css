@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+body {
+    position: relative;height:100%;height:100vh;
+    background: #cacaca;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    overflow: hidden;
+  }
+  #reminder{
+    height: 80px;
+    text-align: center;
+    color: #999;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+  }
+
+  #message-container {
+    position: relative;
+    min-height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    background: rgba(255,255,255,.25);
+  }
+
+  #message-container div {
+    position: relative;
+    background: rgba(0,0,0,.25);
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5);
+    overflow-y: auto;
+    width: 80%;
+    max-width: 1200px;
+    height: calc(80% - 70px - 28px);
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: rgba(255, 255, 255, 0.568);
+  }
+
+  #send-container {
+    position: fixed;
+    padding-bottom: 20px;
+    bottom: 0;
+    background-color: rgba(100, 98, 98, 0.705);
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+  }
+  button{font-family: "Open Sans", Verdana, Arial, sans-serif;cursor: pointer;color: #666;background: #fff;text-shadow: 0 1px 0 rgba(255,255,255,.75);}
+  input[type=text]{font-family: "Open Sans", Verdana, Arial, sans-serif;color: #555;}
+  ::-webkit-scrollbar{width: 8px;}
+  ::-webkit-scrollbar-track{background: rgb(29, 28, 28);box-shadow: inset 0 0 4px rgba(0,0,0,.1);}
+  ::-webkit-scrollbar-thumb{background: #fff;box-shadow: inset 0 0 1px rgba(0,0,0,.5);}
+
+  #message-input {
+    flex-grow: 1;
+  }
